@@ -2,12 +2,12 @@ body {
   margin: 0;
   background: white;
   font-family: 'Arial Black', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
   overflow: hidden;
-}
-
-.container {
-  text-align: center;
-  margin-top: 80px;
 }
 
 .profilbild {
@@ -18,7 +18,7 @@ body {
 }
 
 .button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -30,7 +30,7 @@ body {
   height: 50px;
   border-radius: 30px;
   color: white;
-  margin: 15px auto;
+  margin: 10px 0;
   transition: transform 0.2s ease;
 }
 
@@ -64,6 +64,7 @@ body {
   pointer-events: none;
   background: transparent;
   overflow: hidden;
+  z-index: -1;
 }
 
 .stars::before {
