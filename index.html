@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="stars"></div>
+  <div class="dots"></div>
 
   <img src="profilbild.png" alt="Profilbild" class="profilbild" />
 
@@ -25,5 +25,17 @@
     <img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" alt="Discord Icon" />
     DISCORD
   </a>
+
+  <script>
+    const dotsContainer = document.querySelector('.dots');
+    for (let i = 0; i < 50; i++) {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      dot.style.top = `${Math.random() * 100}%`;
+      dot.style.left = `${Math.random() * 100}%`;
+      dot.style.animationDelay = `${Math.random() * 5}s`;
+      dotsContainer.appendChild(dot);
+    }
+  </script>
 </body>
 </html>
